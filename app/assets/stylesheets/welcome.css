@@ -1,32 +1,22 @@
-.nav-title {
-  text-align: center;
-}
+.nav-title {text-align: center;}
 
 .container {
   width: 95%;
   margin: auto;
 }
 
-.blue, .blue:hover {
-  color: blue;
-}
+.blue, .blue:hover {color: blue;}
 
-.welcome {
-  margin-top: 4%;
-}
+.welcome {margin-top: 4%;}
 
 .welcome-header, .welcome-header h1 {
   padding-top: 0px;
   margin-top: -15px;
 }
 
-.annual-report {
-  border: 1px solid #009748;
-}
+.annual-report {border: 1px solid #41887A;}
 
-.sidebar {
-  border-left: 1px solid #BFBFBC;
-}
+.sidebar {border-left: 1px solid #BFBFBC;}
 
 .footer {
   padding: 2%;
@@ -38,7 +28,7 @@
 
 .hero-link {
   color: white;
-  background-color: #009748;
+  background-color: #41887A;
   padding: 2% 4%;
   margin-top: 4%;
 }
@@ -48,8 +38,37 @@
   font-weight: bold;
 }
 
+.hor-line {
+  border-top: 1px solid #BFBFBC;
+  margin: 4% 0%;
+}
 
-h1 {
-  color: #009748;
-  font-size: 2em;
+.welcome-img {
+  width: 100%;
+  height: 100%;
+}
+
+.key-logo {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 636px) {
+  .sidebar {border: none;
+  display: none;}
+  .hor-line {display: none;}
+}
+
+@media screen and (min-width: 636px) {
+  .heading {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1111px){
+  .right-welcome {display: none;}
+}
+
+@media screen and (min-width: 1111px) {
+  .left-welcome {display: none;}
 }

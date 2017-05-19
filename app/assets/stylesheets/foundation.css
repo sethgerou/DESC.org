@@ -48,7 +48,7 @@ section {
      * `article` contexts in Chrome, Firefox, and Safari.
      */
 h1 {
-  color: #009748;
+  color: #41887A;
   font-size: 1em;
   margin: 0.67em 0; }
 
@@ -1326,9 +1326,8 @@ h6 {
     color: #cacaca; }
 
 h1 {
-  color: #009748;
+  color: #41887A;
   font-size: 1.2rem;
-  text-align: center;
   font-weight: bold;
   line-height: 1.4;
   margin-top: 0.5rem;
@@ -3658,7 +3657,7 @@ a.thumbnail {
 .title-bar {
   text-align: center;
   padding: 0.5rem;
-  background: #009748;
+  background: #41887A;
   color: #fefefe; }
   .title-bar::before, .title-bar::after {
     display: table;
@@ -3762,7 +3761,7 @@ a.thumbnail {
     clear: both; }
   .top-bar,
   .top-bar ul {
-    background-color: #009748; }
+    background-color: #41887A; }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
