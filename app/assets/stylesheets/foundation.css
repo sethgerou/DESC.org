@@ -48,7 +48,8 @@ section {
      * `article` contexts in Chrome, Firefox, and Safari.
      */
 h1 {
-  font-size: 2em;
+  color: #009748;
+  font-size: 1em;
   margin: 0.67em 0; }
 
 /* Grouping content
@@ -1286,7 +1287,7 @@ td {
 
 p {
   margin-bottom: 1rem;
-  font-size: inherit;
+  font-size: .7em;
   line-height: 1.6;
   text-rendering: optimizeLegibility; }
 
@@ -1325,9 +1326,12 @@ h6 {
     color: #cacaca; }
 
 h1 {
-  font-size: 1.5rem;
+  color: #009748;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
   line-height: 1.4;
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-bottom: 0.5rem; }
 
 h2 {
