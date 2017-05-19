@@ -7,6 +7,48 @@
   margin: auto;
 }
 
+.blue, .blue:hover {
+  color: blue;
+}
+
+.welcome {
+  margin-top: 4%;
+}
+
+.welcome-header, .welcome-header h1 {
+  padding-top: 0px;
+  margin-top: -15px;
+}
+
+.annual-report {
+  border: 1px solid #009748;
+}
+
+.sidebar {
+  border-left: 1px solid #BFBFBC;
+}
+
+.footer {
+  padding: 2%;
+  margin-top: 4%;
+  font-weight: bold;
+  text-align: center;
+  background-color: #BFBFBC;
+}
+
+.hero-link {
+  color: white;
+  background-color: #009748;
+  padding: 2% 4%;
+  margin-top: 4%;
+}
+
+.hero-link a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
 h1 {
   color: #009748;
   font-size: 2em;
