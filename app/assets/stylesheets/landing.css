@@ -1,8 +1,12 @@
 .top-quote-box {
   padding: 10%;
   background-color: #BFBFBC;
+  text-align: center;
 }
 
 .donate-button {
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: #41887A;
 }
