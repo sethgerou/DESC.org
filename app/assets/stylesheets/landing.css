@@ -12,23 +12,32 @@
 }
 
 .learn-more {
-  text-align: left;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #41887A;
+}
+
+.learn-more p {
+  padding: 0 7% 2% 7%;
+  margin: 0px;
+  text-align: center;
 }
 
 .learn-more a, .learn-more a:hover {
-    color: blue;
+    color: #41887A;
 }
 
 .learn-more-heading {
   background-color: #41887A;
   color: white;
   display: inline-block;
-  padding: 1% 2%;
+  padding: 2% 2%;
+  width: 120px;
 }
 
-.landing-right {
+/*.landing-right {
   text-align: right;
-}
+}*/
 
 .border {
   border: 1px dashed red;
@@ -37,5 +46,14 @@
 @media screen and (max-width: 636px) {
   .right {
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .mobile-spacing {
+    margin: 6% 4% 2% 4%;
+    padding: 0;
+    border-bottom: 1px solid #41887A;
+    opacity: .2;
   }
 }
