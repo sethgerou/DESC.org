@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-.learn-more a, .learn-more a:hover {
+.learn-more a, .learn-more a:hover, .learn-more:focus, .learn-more:visited {
     color: #41887A;
 }
 
