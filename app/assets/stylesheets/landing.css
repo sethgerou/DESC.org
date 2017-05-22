@@ -57,3 +57,32 @@
     opacity: .2;
   }
 }
+
+.keylogo {
+  display: inline;
+  float: left;
+}
+
+.cornerlogo {
+  margin-top: .6%;
+  margin-left: .6%;
+  float: left;
+}
+
+.cornerlogo-mobile {
+  margin-top: 2%;
+  margin-left: 1%;
+  float: left;
+}
+
+@media screen and (max-width: 636px) {
+  .cornerlogo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 636px) {
+  .cornerlogo-mobile {
+    display: none;
+  }
+}
