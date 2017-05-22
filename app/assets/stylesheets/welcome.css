@@ -53,6 +53,19 @@
   height: 20px;
 }
 
+.summary {
+  margin: 4%;
+}
+
+.topic-heading a {color: #41887A;}
+
+.topic-heading a:hover {color: #41887A;}
+
+.summary a {color: #41887A;}
+
+.summary a:hover {color: #41887A;}
+
+
 @media screen and (max-width: 636px) {
   .sidebar {border: none;
   display: none;}
