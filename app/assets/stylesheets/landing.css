@@ -75,6 +75,37 @@
   float: left;
 }
 
+.login {float: right;
+color: white;
+}
+
+.edit a, .edit a:hover, .edit a:focus, .edit a:visited { color: #41887A }
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -80px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page-wrap:after {
+  height: 80px;
+}
+
+.footer-text {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 636px) {
   .cornerlogo {
     display: none;
@@ -83,6 +114,12 @@
 
 @media screen and (min-width: 636px) {
   .cornerlogo-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 636px) {
+  .login {
     display: none;
   }
 }
