@@ -16,6 +16,19 @@
 
 //= require_tree .
 
+
 window.onload = function() {
        $(document).foundation();
 };
+
+tinymce.init({
+  selector: "textarea",  // change this value according to your html
+  plugins: "textcolor link media image",
+  toolbar: "forecolor backcolor media image link",
+  textcolor_map: [
+   "000000", "Black",
+   "FFFFFF", "White",
+   "41887A", "DESC green"
+ ],
+  height : "480"
+});
