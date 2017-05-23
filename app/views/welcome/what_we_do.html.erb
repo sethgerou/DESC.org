@@ -1,6 +1,9 @@
 <div class="container">
   <div class="row summary">
     <div class="medium-8 columns">
+            <% if user_signed_in? %>
+            <a href="#">edit</a></a>
+            <% end %>
       <h1 class="heading" >WHAT WE DO</h1>
         <p>DESC provides effective and affordable solutions to homelessness for our community's most vulnerable single adults through a nationally recognized interwoven network of care, housing, and support, including:</p>
           <ul>
@@ -21,7 +24,7 @@
       </div>
       <div class="medium-4 columns sidebar">
         <h1 class="heading">Host in action</h1>
-        <img src="assets/whatwedoNoahimage.jpg" />
+        <img src="/assets/whatwedoNoahimage.jpg" />
         <p>Noah, while working as a member of DESC's <a href="#">HOST</a> team, makes first contact with clients on the street.</p>
         <p><em>Photo credit: Christopher Daniel© 2010</em></p>
       </div>

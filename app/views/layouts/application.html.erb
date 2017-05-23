@@ -7,13 +7,14 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <link rel="stylesheet" href="./assets/foundation.css" />
+    <link rel="stylesheet" href="/assets/foundation.css" />
     <!-- Compressed JavaScript -->
-    <script src="./assets/vendor/foundation.js"></script>
+    <script src="/assets/vendor/foundation.js"></script>
   </head>
   <body>
-<a href="/"><img class="cornerlogo" src="./assets/keylogo.png" alt=""></a>
-<a href="/"><img class="cornerlogo-mobile" src="./assets/key3desc.png" alt=""></a>
+    <div class="page-wrap">
+<a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
+<a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a>
   <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
   <button class="menu-icon" type="button" data-toggle="example-menu"></button>
 
@@ -44,15 +45,35 @@
       <li><a href="#">Get Involved</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
-  </div>
-</div>
-    <%= yield %>
-    <footer>
-      <div class="footer">
-        <p>
-Contact Us | Privacy Policy (HIPAA) | Site Map | DESC © 2010 | 515 Third Avenue, Seattle. WA 98104 | 206-464-1570
-        </p>
       </div>
-    </footer>
+<div class="login">
+      <ul  class="">
+      <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>.
+        <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+        <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+      <% else %>
+        <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> |
+        <%= link_to "New User", new_user_registration_path, :class => 'navbar-link'  %>
+      <% end %>
+    </ul>
+</div>
+
+
+</div>
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+    <%= yield %>
+  </div>
+      <div class="footergit ">
+        <p class="footer-text">
+Contact Us | Privacy Policy (HIPAA) | Site Map | DESC © 2010 | 515 Third Avenue, Seattle. WA 98104 | 206-464-1570</p>
+      </div>
   </body>
 </html>
