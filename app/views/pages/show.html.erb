@@ -1,4 +1,18 @@
 <div class="container">
-  <h1><%= @page.title %></h1>
-  <p><%= raw(@page.body) %></p>
+  <div class="row summary">
+    <div class="medium-8 columns">
+        <% if user_signed_in? %>
+          <%= link_to "Edit", edit_page_path %>
+        <% end %>
+        <p><%= raw(@page.body) %></p>
+    </div>
+    <div class="medium-4 columns sidebar">
+      <% if user_signed_in? %>
+        <%= link_to "Edit", edit_sidebar_path %>
+      <% end %>
+      <% if @page.sidebar %>
+        <p><%= raw(@page.sidebar) %></p>
+      <% end %>
+    </div>
+  </div>
 </div>

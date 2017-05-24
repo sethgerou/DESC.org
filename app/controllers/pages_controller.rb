@@ -18,7 +18,7 @@ class PagesController < ApplicationController
 
   private
   def edit_page_params
-    params.require(:page).permit(:title, :body)
+    params.require(:page).permit(:title, :body, :sidebar)
   end
 
 end

@@ -32,7 +32,7 @@
   color: white;
   display: inline-block;
   padding: 2% 2%;
-  width: 120px;
+  width: 150px;
 }
 
 /*.landing-right {
@@ -84,6 +84,7 @@ color: white;
 * {
   margin: 0;
 }
+
 html, body {
   height: 100%;
 }
@@ -121,5 +122,19 @@ html, body {
 @media screen and (max-width: 636px) {
   .login {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px){
+  iframe {
+    max-width: 280px;
+    max-height: 157px;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  iframe {
+    min-width: 600px;
+    min-height: 338px;
   }
 }
