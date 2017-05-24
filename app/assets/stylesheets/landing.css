@@ -81,6 +81,10 @@ color: white;
 
 .edit a, .edit a:hover, .edit a:focus, .edit a:visited { color: #41887A }
 
+.blue {
+  background-color: blue;
+}
+
 * {
   margin: 0;
 }
@@ -105,6 +109,10 @@ html, body {
 
 .footer-text {
   margin-bottom: 0;
+}
+
+.white a, .white a:hover, .white a:focus, .white a:visited {
+  color: white;
 }
 
 @media screen and (max-width: 636px) {

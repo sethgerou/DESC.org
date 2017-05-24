@@ -10,7 +10,11 @@ class PagesController < ApplicationController
   def update
     @page = Page.find(params[:id])
     if @page.update(edit_page_params)
-      redirect_to page_path(@page.id)
+      if @page.id == 14
+        redirect_to root_path
+      else
+        redirect_to page_path(@page.id)
+      end
     else
       render :edit
     end

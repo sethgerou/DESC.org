@@ -23,8 +23,8 @@ window.onload = function() {
 
 tinymce.init({
   selector: "textarea",  // change this value according to your html
-  plugins: "textcolor link media image",
-  toolbar: "forecolor backcolor media image link sizeselect fontselect",
+  plugins: "textcolor link media image code",
+  toolbar: "forecolor backcolor media image link sizeselect fontselect code",
   textcolor_map: [
    "000000", "Black",
    "FFFFFF", "White",
