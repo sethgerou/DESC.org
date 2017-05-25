@@ -1,4 +1,9 @@
 class SummariesController < ApplicationController
+  def index
+    @summaries = Summary.all
+    @summaries = @summaries[-1..-1]
+  end
+
   def new
     @summary = Summary.new
   end
@@ -16,12 +21,12 @@ class SummariesController < ApplicationController
         @link.save
       end
       if params[:summaries][:url_two]
-        @link = Link.new({url: params[:summaries][:url_one], text: params[:summaries][:text_one]})
+        @link = Link.new({url: params[:summaries][:url_two], text: params[:summaries][:text_two]})
         @link.summary_id = @summary.id
         @link.save
       end
       if params[:summaries][:url_three]
-        @link = Link.new({url: params[:summaries][:url_one], text: params[:summaries][:text_one]})
+        @link = Link.new({url: params[:summaries][:url_three], text: params[:summaries][:text_three]})
         @link.summary_id = @summary.id
         @link.save
       end

@@ -1,0 +1,11 @@
+<div class="summary">
+<% @summaries.each do |summary| %>
+<%= summary.heading %>
+<%= summary.subheading %>
+<%= summary.body %>
+<img src="<%= summary.image_url %>" alt="">
+<% summary.links.each do |link| %>
+<a href="<%= link.url %>"><%= link.text %></a>
+<% end %>
+<% end %>
+</div>
