@@ -103,6 +103,11 @@ html, body {
   display: block;
 }
 
+#summaries_heading {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .footer, .page-wrap:after {
   height: 80px;
 }
@@ -113,6 +118,21 @@ html, body {
 
 .white a, .white a:hover, .white a:focus, .white a:visited {
   color: white;
+}
+
+.landing-image {
+  margin-top: 1.8em;
+  max-height: 300px;
+  border-radius: 7% 2%;
+  margin-bottom: 1em;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.landing-left-image {
+  margin-right: 1.6em;
 }
 
 @media screen and (max-width: 636px) {

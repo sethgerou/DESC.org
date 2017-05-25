@@ -1,0 +1,58 @@
+<div class="errors">
+  <ul class="errors">
+    <% if @summary %>
+      <% @summary.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="new-summary medium-6 columns">
+    <%= form_for :summaries, url: summaries_path do |f| %>
+      <div>
+        <p>
+          <%= f.label :heading %>
+          <%= f.text_field :heading,  size: "three5"%>
+        </p>
+      </div>
+      <div>
+        <%= f.label :subheading %>
+        <%= f.text_field :subheading %>
+      </div>
+      <div>
+        <%= f.label :body %>
+        <%= f.text_field :body %>
+      </div>
+      <div>
+        <%= f.label :image_url %>
+        <%= f.text_field :image_url %>
+      </div>
+      <div class=:"link-field">
+        <%= f.label :link_one_text %>
+        <%= f.text_field :text_one %>
+
+        <%= f.label :link_one_url %>
+        <%= f.text_field :url_one %>
+      </div>
+      <div>
+        <%= f.label :link_two_text %>
+        <%= f.text_field :text_two %>
+      </div>
+      <div>
+        <%= f.label :link_two_url %>
+        <%= f.text_field :url_two %>
+      </div>
+      <div>
+        <%= f.label :link_three_text %>
+        <%= f.text_field :text_three %>
+      </div>
+      <div>
+        <%= f.label :link_three_url %>
+        <%= f.text_field :url_three %>
+      </div>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
