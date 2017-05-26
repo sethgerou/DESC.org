@@ -1,7 +1,28 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#summaries_heading {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .top-quote-box {
   padding: 8% 10%;
   background-color: #BFBFBC;
   text-align: center;
+}
+
+.donate {
+  background-color: white;
+}
+
+.donate a, .donate a:hover, .donate a:focus, .donate a:visited {
+  color: #41887A;
 }
 
 .donate-button {
@@ -18,8 +39,8 @@
 }
 
 .learn-more p {
-  padding: 0 7% 2% 7%;
-  margin: 0px;
+  padding: 0 0 2% 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -35,27 +56,8 @@
   width: 150px;
 }
 
-/*.landing-right {
-  text-align: right;
-}*/
-
 .border {
   border: 1px dashed red;
-}
-
-@media screen and (max-width: 636px) {
-  .right {
-    text-align: right;
-  }
-}
-
-@media screen and (max-width: 636px) {
-  .mobile-spacing {
-    margin: 6% 4% 2% 4%;
-    padding: 0;
-    border-bottom: 1px solid #41887A;
-    opacity: .2;
-  }
 }
 
 .keylogo {
@@ -85,14 +87,6 @@ color: white;
   background-color: blue;
 }
 
-* {
-  margin: 0;
-}
-
-html, body {
-  height: 100%;
-}
-
 .page-wrap {
   min-height: 100%;
   margin-bottom: -80px;
@@ -101,11 +95,6 @@ html, body {
 .page-wrap:after {
   content: "";
   display: block;
-}
-
-#summaries_heading {
-  margin-bottom: 0;
-  padding: 0;
 }
 
 .footer, .page-wrap:after {
@@ -133,36 +122,4 @@ html, body {
 
 .landing-left-image {
   margin-right: 1.6em;
-}
-
-@media screen and (max-width: 636px) {
-  .cornerlogo {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 636px) {
-  .cornerlogo-mobile {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 636px) {
-  .login {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 420px){
-  iframe {
-    max-width: 280px;
-    max-height: 157px;
-  }
-}
-
-@media screen and (min-width: 420px) {
-  iframe {
-    min-width: 600px;
-    min-height: 338px;
-  }
 }
