@@ -1,203 +1,198 @@
-<div class="edit">
-  <% if user_signed_in? %>
-<a href="#">edit</a></a>
-<% end %>
-</div>
+
+
+
 <div class="top-quote-box quote">
   <div class="row">
-    <h2>2,000 homeless men & women look to DESC for help every day</h2>
+  <h2>2,000 homeless men & women look to DESC for help every day</h2>
     <div class="medium-8 columns"></div>
       <div class="donate-button medium-2 columns">
         <a href="https://donatenow.networkforgood.org/DESC" target="_blank">Donate Now</a>
       </div>
     </div>
   </div>
+  <div class="edit">
+  <% if user_signed_in? %>
+    <%= link_to "Edit", edit_page_path(@page.id) %>
+  <% end %>
+    </div>
+<!-- <%= raw(@page.body) %> -->
 <div class="container">
   <div class="row">
-      <div class="medium-6 columns">
-        <div class="topic-heading">
-          <h1><a href="/what_we_do">What We Do</a></h1>
-          <h3>sub heading</h3>
-        </div>
-        <div >
-          <img class="topic-photo">
-        </div>
-        <div class="topic-summary medium-10 columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+
+    <div class="medium-7 columns">
+
+      <div class="topic-heading">
+        <h1><a href="/pages/2">What We Do</a></h1>
+        <h3 class="subheading"></h3>
       </div>
-    </div>
-    <div class="row">
-      <div class="medium-3 columns">
-      </div>
-        <div class="medium-9 columns">
-          <div class="learn-more">
-            <div class="learn-more-heading">
-              <h4>Learn More</h4>
-            </div>
-            <p><a href="#">lorem ipsum</a></p>
-            <p><a href="#">suscipit eros</a></p>
-            <p><a href="#">cursus tempus</a></p>
-        </div>
-      </div>
-    </div>
-<div class="mobile-spacing">
-</div>
-    <div class="row landing-right">
-      <div class="medium-5 columns">
-      </div>
-      <div class="medium-6 columns landing-right">
-        <div class="topic-heading">
-          <h1>Who We Serve</h1>
-          <h3>sub heading</h3>
-        </div>
-          <div >
-            <img class="topic-photo">
-          </div>
-          <div class="topic-summary medium-10 columns">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
-        <div class="row landing-right">
-          <div class="medium-4 columns">
-          </div>
-          <div class="medium-4 columns right">
-            <div class="learn-more">
-          <div class="learn-more-heading">
+
+      <div class="learn-more">
+        <a href="/pages/2">
+          <div class="learn-more-heading white">
             <h4>Learn More</h4>
           </div>
-            <p><a href="#">lorem ipsum</a></p>
-            <p><a href="#">suscipit eros</a></p>
-            <p><a href="#">cursus tempus</a></p>
-            <p><a href="#">lorem ipsum</a></p>
-          </div>
-        </div>
+        </a>
+          <p><a href="/pages/3">Who We Serve</a></p>
+          <p><a href="/pages/4">Entry Services</a></p>
+          <p><a href="/pages/5">Clinical Services</a></p>
       </div>
-<div class="mobile-spacing">
-</div>
-  <div class="row">
-      <div class="medium-6 columns">
-        <div class="topic-heading">
-          <h1>Entry Services</h1>
-          <h3>sub heading</h3>
+
+        <div class="topic-summary medium-9 columns">
+          <h5>DESC provides effective and affordable solutions to homelessness for our community's most vulnerable single adults through a nationally recognized interwoven network of care, housing, and support.</h5>
         </div>
-        <div >
-          <img class="topic-photo">
-        </div>
-        <div class="topic-summary medium-10 columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
+
     </div>
-    <div class="row">
-      <div class="medium-3 columns">
-      </div>
-        <div class="medium-9 columns">
-          <div class="learn-more">
-            <div class="learn-more-heading">
-              <h4>Learn More</h4>
-            </div>
-            <p><a href="#">lorem ipsum</a></p>
-            <p><a href="#">suscipit eros</a></p>
-            <p><a href="#">cursus tempus</a></p>
-        </div>
-      </div>
+
+    <div class="medium-5 columns">
+      <img class="landing-image" src="http://desc.org/images/slideshow/homeslide04B.gif" alt="">
     </div>
+
+  </div>
+
 <div class="mobile-spacing">
 </div>
-    <div class="row landing-right">
-      <div class="medium-5 columns">
+
+<div class="row">
+
+  <div class="medium-5 columns right-align">
+    <img class="landing-image landing-left-image" src="http://desc.org/images/slideshow/homeslide01B.gif" alt="">
+  </div>
+
+  <div class="medium-5 columns">
+  </div>
+    <div class="medium-7 columns">
+      <div class="topic-heading">
+        <h1><a href="/pages/2">Who We Are</a></h1>
+        <h3>sub heading</h3>
       </div>
-      <div class="medium-6 columns landing-right">
-        <div class="topic-heading">
-          <h1>Who We Are</h1>
-          <h3>sub heading</h3>
-        </div>
-          <div >
-            <img class="topic-photo">
-          </div>
-          <div class="topic-summary medium-10 columns">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
+      <div class="learn-more">
+        <a href="/pages/2"><div class="learn-more-heading white">
+          <h4>Learn More</h4>
+      </div></a>
+        <p><a href="/pages/3">Who We Serve</a></p>
+        <p><a href="/pages/4">Entry Services</a></p>
+        <p><a href="/pages/5">Clinical Services</a></p>
+    </div>
+      <div class="topic-summary medium-9 columns">
+        <h5>DESC (Downtown Emergency Service Center) is a nonprofit organization of nearly 600 professional staff, board members, and community volunteers who strive to fulfill DESC's mission to end chronic homelessness in our community.</h5>
       </div>
-        <div class="row landing-right">
-          <div class="medium-4 columns">
-          </div>
-          <div class="medium-4 columns right">
-            <div class="learn-more">
-          <div class="learn-more-heading">
-            <h4>Learn More</h4>
-          </div>
-            <p><a href="#">lorem ipsum</a></p>
-            <p><a href="#">suscipit eros</a></p>
-            <p><a href="#">cursus tempus</a></p>
-            <p><a href="#">lorem ipsum</a></p>
           </div>
         </div>
-      </div>
+
+        <div class="medium-5 columns">
+          <img class="landing-image" src="http://desc.org/images/clients/Jerome1.jpg" alt="">
+        </div>
+
+  </div>
 <div class="mobile-spacing">
 </div>
-      <div class="row">
-          <div class="medium-6 columns">
-            <div class="topic-heading">
-              <h1>Get Involved</h1>
-              <h3>sub heading</h3>
-            </div>
-            <div >
-              <img class="topic-photo">
-            </div>
-            <div class="topic-summary medium-10 columns">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-          </div>
-        </div>
-          <div class="row">
-            <div class="medium-3 columns">
-            </div>
-            <div class="medium-9 columns">
-              <div class="learn-more">
-            <div class="learn-more-heading">
-              <h4>Learn More</h4>
-            </div>
-              <p><a href="#">lorem ipsum</a></p>
-              <p><a href="#">suscipit eros</a></p>
-            </div>
-          </div>
-        </div>
-<div class="mobile-spacing">
-</div>
-        <div class="row landing-right">
-          <div class="medium-5 columns">
+
+<div class="row">
+    <div class="medium-7 columns">
+      <div class="topic-heading">
+        <h1><a href="/pages/2">Get Involved</a></h1>
+        <h3>sub heading</h3>
+      </div>
+      <div class="learn-more">
+        <a href="/pages/2"><div class="learn-more-heading white">
+          <h4>Learn More</h4>
+      </div></a>
+        <p><a href="/pages/3">Who We Serve</a></p>
+        <p><a href="/pages/4">Entry Services</a></p>
+        <p><a href="/pages/5">Clinical Services</a></p>
+    </div>
+
+
+      <div class="topic-summary medium-9 columns">
+        <h5>Ending homelessness is not a mystery. Experience proves that placing homeless men and women in housing supported by trained staff with a complement of health care, chemical dependency treatment, and mental health services keeps even the most vulnerable and disabled adults off of the streets and safely housed.</h5>
+      </div>
 
           </div>
-            <div class="medium-6 columns landing-right">
-              <div class="topic-heading">
-                <h1>Events</h1>
-                <h3>sub heading</h3>
-              </div>
-              <div >
-                <img class="topic-photo">
-              </div>
-              <div class="topic-summary medium-10 columns">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              </div>
-            </div>
+
+
+        </div>
+
+<div class="mobile-spacing">
+</div>
+
+<div class="row">
+  <div class="medium-5 columns right-align">
+    <img class="landing-image landing-left-image" src="http://desc.org/images/clients/John2.jpg" alt="">
+  </div>
+  <div class="medium-7 columns">
+    <div class="topic-heading">
+      <h1><a href="/pages/2">Mission</a></h1>
+      <h3>this is a subheading</h3>
+    </div>
+    <div class="learn-more">
+      <a href="/pages/2"><div class="learn-more-heading white">
+        <h4>Learn More</h4>
+    </div></a>
+      <p><a href="/pages/3">Who We Serve</a></p>
+      <p><a href="/pages/4">Entry Services</a></p>
+      <p><a href="/pages/5">Clinical Services</a></p>
+  </div>
+    <div class="topic-summary medium-9 columns">
+      <h5>The Downtown Emergency Service Center (DESC) works to end the homelessness of vulnerable people, particularly those living with serious mental or addictive illnesses. Through partnerships and an integrated array of comprehensive services, treatment and housing, we give people the opportunity to reach their highest potential. At DESC, uncommon efforts produce uncommon results that eliminate homelessness, one person at a time.</h5>
+    </div>
+        </div>
+      </div>
+</div>
+<div class="mobile-spacing">
+</div>
+
+<div class="row">
+    <div class="medium-7 columns">
+      <div class="topic-heading">
+        <h1><a href="/pages/2">Contact Us</a></h1>
+        <h3>sub heading</h3>
+      </div>
+      <div class="learn-more">
+        <a href="/pages/2"><div class="learn-more-heading white">
+          <h4>Learn More</h4>
+      </div></a>
+        <p><a href="/pages/3">Who We Serve</a></p>
+        <p><a href="/pages/4">Entry Services</a></p>
+        <p><a href="/pages/5">Clinical Services</a></p>
+    </div>
+
+
+      <div class="topic-summary medium-9 columns">
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h5>
+      </div>
+
           </div>
-            <div class="row landing-right">
-              <div class="medium-4 columns">
-              </div>
-              <div class="medium-4 columns right">
-                <div class="learn-more">
-              <div class="learn-more-heading">
-                <h4>Learn More</h4>
-              </div>
-                <p><a href="#">lorem ipsum</a></p>
-                <p><a href="#">suscipit eros</a></p>
-                <p><a href="#">cursus tempus</a></p>
-                <p><a href="#">lorem ipsum</a></p>
-              </div>
-            </div>
+
+          <div class="medium-5 columns">
+            <img class="landing-image" src="http://desc.org/images/slideshow/homeslide05A.gif" alt="">
           </div>
+        </div>
+
+<div class="mobile-spacing">
+</div>
+
+<div class="row">
+
+  <div class="medium-5 columns right-align">
+    <img class="landing-image landing-left-image" src="http://desc.org/images/slideshow/homeslide03A.gif" alt="">
+  </div>
+
+  <div class="medium-7 columns">
+    <div class="topic-heading">
+      <h1><a href="/pages/2">Emergency Shelter</a></h1>
+      <h3>sub heading</h3>
+    </div>
+    <div class="learn-more">
+      <a href="/pages/2"><div class="learn-more-heading white">
+        <h4>Learn More</h4>
+    </div></a>
+      <p><a href="/pages/3">Who We Serve</a></p>
+      <p><a href="/pages/4">Entry Services</a></p>
+      <p><a href="/pages/5">Clinical Services</a></p>
+  </div>
+    <div class="topic-summary medium-9 columns">
+      <h5>Individuals who are living with mental illness, substance-use disorders, elderly, medically compromised, physically or developmentally disabled are prioritized for a comprehensive program of clinical services, shelter, and supportive housing that addresses their needs in a way that can end homelessness.</h5>
+    </div>
+        </div>
+      </div>
 </div>

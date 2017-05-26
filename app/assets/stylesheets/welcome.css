@@ -33,6 +33,10 @@
   margin-top: 4%;
 }
 
+.errors {
+  color: red;
+}
+
 .hero-link a {
   text-decoration: underline;
   font-weight: bold;
@@ -61,22 +65,10 @@
 
 .summary a, .summary a:hover, .summary a:focus, .summary a:visited {color: #41887A;}
 
-@media screen and (max-width: 636px) {
-  .sidebar {border: none;
-  display: none;}
-  .hor-line {display: none;}
-}
-
-@media screen and (min-width: 636px) {
-  .heading {
-    font-size: 1em;
-  }
-}
-
-@media screen and (max-width: 1111px){
-  .right-welcome {display: none;}
-}
-
-@media screen and (min-width: 1111px) {
-  .left-welcome {display: none;}
+.new-summary-link {
+  margin-left: 14%;
+  margin-top: 5%;
+  background-color: #41887A;
+  display: inline-block;
+  padding: 1% 2%;
 }

@@ -1,0 +1,25 @@
+<div class="errors">
+  <ul class="errors">
+    <% if @link %>
+      <% @link.errors.full_messages.each do |error| %>
+        <li><%= error %></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+
+<div class="row">
+  <div class="new-summary medium-6 columns">
+    <%= form_for @link, url: summary_link_path do |f| %>
+      <div>
+        <%= f.label :text %>
+        <%= f.text_field :text, value: @link.text %>
+      </div>
+      <div>
+        <%= f.label :url %>
+        <%= f.text_field :url, value: @link.url %>
+      </div>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

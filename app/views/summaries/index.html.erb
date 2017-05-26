@@ -1,0 +1,117 @@
+  <div class="top-quote-box quote">
+    <div class="row">
+    <h2>2,000 homeless men & women look to DESC for help every day</h2>
+      <div class="medium-8 columns"></div>
+        <div class="donate-button medium-2 columns">
+          <a href="https://donatenow.networkforgood.org/DESC" target="_blank">Donate Now</a>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+
+    <% if user_signed_in? %>
+    <a href="/summaries/new">
+      <div class="new-summary-link">
+        New Summary
+      </div>
+    </a>
+    <% end %>
+
+  <% @summaries.each_with_index do |summary, i| %>
+  <div class="summary">
+  <% if i%2 == 0 %>
+    <div class="row">
+
+      <div class="medium-7 columns">
+
+        <% if user_signed_in? %>
+          <%= link_to "✎", edit_summary_path(summary.id), class: "summary", method: "get" %>
+          <%= link_to "x", summary_path(summary.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+        <% end %>
+        <div class="topic-heading">
+          <h1><a href="#"><%= summary.heading.capitalize %></a></h1>
+          <h3 class="subheading"><%= summary.subheading %></h3>
+        </div>
+
+        <div class="learn-more">
+          <a href="#">
+            <div class="learn-more-heading white">
+              <h4>Learn More</h4>
+            </div></a>
+            <% if user_signed_in? %>
+              <%= link_to "New", new_summary_link_path(summary.id), class: "summary", method: "get" %>
+            <% end %>
+
+          <% summary.links.each do |link| %>
+          <p>
+          <% if user_signed_in? %>
+            <%= link_to "✎", edit_summary_link_path(summary.id, link.id), class: "summary", method: "get" %>
+            <%= link_to "x", summary_link_path(summary.id, link.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+          <% end %>
+            <a href="<%= link.url %>"><%= link.text %></a></p>
+          <% end %>
+        </div>
+
+
+        <div class="topic-summary medium-9 columns">
+          <h5><%= summary.body %></h5>
+        </div>
+
+      </div>
+
+            <div class="medium-5 columns">
+              <img class="landing-image" src="<%= summary.image_url %>" alt="#{<%= summary.heading %>} image">
+            </div>
+
+      </div>
+
+
+  <% else %>
+
+    <div class="row">
+
+      <div class="medium-5 columns right-align">
+        <img class="landing-image landing-left-image" src="<%= summary.image_url %>" alt="#{<%= summary.heading %>} image">
+      </div>
+
+      <div class="medium-7 columns">
+
+        <% if user_signed_in? %>
+          <%= link_to "✎", edit_summary_path(summary.id), class: "summary", method: "get" %>
+          <%= link_to "x", edit_summary_path(summary.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+        <% end %>
+
+        <div class="topic-heading">
+          <h1><a href="#"><%= summary.heading %></a></h1>
+          <h3 class="subheading"><%= summary.subheading %></h3>
+        </div>
+
+        <div class="learn-more">
+          <a href="#">
+            <div class="learn-more-heading white">
+              <h4>Learn More</h4>
+            </div></a>
+            <% if user_signed_in? %>
+              <%= link_to "New", new_summary_link_path(summary.id), class: "summary", method: "get" %>
+            <% end %>
+          <% summary.links.each do |link| %>
+            <p>
+              <% if user_signed_in? %>
+                <%= link_to "✎", edit_summary_link_path(summary.id, link.id), class: "summary", method: "get" %>
+                <%= link_to "x", summary_link_path(summary.id, link.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+              <% end %>
+              <a href="<%= link.url %>"><%= link.text %></a></p>
+          <% end %>
+        </div>
+
+        <div class="topic-summary medium-9 columns">
+          <h5><%= summary.body %></h5>
+        </div>
+
+      </div>
+
+    </div>
+  <% end %>
+    <div class="mobile-spacing"></div>
+  </div>
+<% end %>

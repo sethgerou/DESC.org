@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
+    @page = Page.find(14)
     render :landing
   end
 
