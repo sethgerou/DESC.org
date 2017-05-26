@@ -14,7 +14,7 @@ class SummariesController < ApplicationController
   def update
     @summary = Summary.find(params[:id])
     if @summary.update(edit_summary_params)
-      redirect_to summaries_path
+      redirect_to root_path
     else
       render :edit
     end
@@ -49,7 +49,7 @@ class SummariesController < ApplicationController
   def destroy
     @summary = Summary.find(params[:id])
     @summary.destroy
-    redirect_to summaries_path
+    redirect_to root_path
   end
 
   private

@@ -43,8 +43,8 @@
         <% summary.links.each do |link| %>
         <p>
         <% if user_signed_in? %>
-          <%= link_to "Edit", edit_summary_link_path(summary.id, :id), class: "summary", method: "get" %>
-          <%= link_to "Delete", summary_link_path(summary.id, :id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+          <%= link_to "Edit", edit_summary_link_path(summary.id, link.id), class: "summary", method: "get" %>
+          <%= link_to "Delete", summary_link_path(summary.id, link.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
         <% end %>
         </p>
           <p><a href="<%= link.url %>"><%= link.text %></a></p>
