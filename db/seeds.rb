@@ -19,7 +19,3 @@ Page.create!([
   {title: "title", body: "body", sidebar: "sidebar"},
   {title: "title", body: "body", sidebar: "sidebar"}
 ])
-Summary.create!([
-  {heading: "Entry Services", subheading: "A very important service", body: "Individuals who are living with mental illness, substance-use disorders, elderly, medically compromised, physically or developmentally disabled are prioritized for a comprehensive program of clinical services, shelter, and supportive housing that addresses their needs in a way that can end homelessness.", image_url: "http://desc.org/images/slideshow/homeslide01B.gif"},
-  {heading: "Mission/vision", subheading: "this is a subheading", body: "The Downtown Emergency Service Center (DESC) works to end the homelessness of vulnerable people, particularly those living with serious mental or addictive illnesses. Through partnerships and an integrated array of comprehensive services, treatment and housing, we give people the opportunity to reach their highest potential. At DESC, uncommon efforts produce uncommon results that eliminate homelessness, one person at a time.", image_url: "http://desc.org/images/clients/John2.jpg"}
-])
