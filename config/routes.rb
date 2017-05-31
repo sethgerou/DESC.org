@@ -8,6 +8,4 @@ Rails.application.routes.draw do
   end
 
   resources :pages, only: [:show, :edit, :update]
-  resources :sidebars, only: [:edit]
-  get '/what_we_do', :to => 'welcome#what_we_do_show'
 end
