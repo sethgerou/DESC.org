@@ -21,10 +21,9 @@ class SummariesController < ApplicationController
   end
 
   def create
-    @summary = Summary.new(new_summary_params.except(:url_one, :text_one, :url_two, :text_two, :url_three, :text_three))
-    if @summary.save
+    @summary = Summary.create(new_summary_params.except(:url_one, :text_one, :url_two, :text_two, :url_three, :text_three))
+    if @summary.valid?
       @summary = Summary.last
-
       if params[:summaries][:url_one]
         @link = Link.new({url: params[:summaries][:url_one], text: params[:summaries][:text_one]})
         @link.summary_id = @summary.id
