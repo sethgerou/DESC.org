@@ -1,3 +1,129 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+#summaries_heading {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.top-quote-box {
+  padding: 8% 10%;
+  background-color: #BFBFBC;
+  text-align: center;
+}
+
+.donate {
+  background-color: white;
+}
+
+.donate a, .donate a:hover, .donate a:focus, .donate a:visited {
+  color: #41887A;
+}
+
+.donate-button {
+  font-weight: bold;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #41887A;
+}
+
+.learn-more {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #41887A;
+}
+
+.learn-more p {
+  padding: 0 0 2% 0;
+  margin: 0;
+  text-align: center;
+}
+
+.learn-more a, .learn-more a:hover, .learn-more:focus, .learn-more:visited {
+    color: #41887A;
+}
+
+.learn-more-heading {
+  background-color: #41887A;
+  color: white;
+  display: inline-block;
+  padding: 2% 2%;
+  width: 150px;
+}
+
+.border {
+  border: 1px dashed red;
+}
+
+.keylogo {
+  display: inline;
+  float: left;
+}
+
+.cornerlogo {
+  margin-top: .6%;
+  margin-left: .6%;
+  float: left;
+}
+
+.cornerlogo-mobile {
+  margin-top: 2%;
+  margin-left: 1%;
+  float: left;
+}
+
+.login {float: right;
+color: white;
+}
+
+.edit a, .edit a:hover, .edit a:focus, .edit a:visited { color: #41887A }
+
+.blue {
+  background-color: blue;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -80px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.footer, .page-wrap:after {
+  height: 80px;
+}
+
+.footer-text {
+  margin-bottom: 0;
+}
+
+.white a, .white a:hover, .white a:focus, .white a:visited {
+  color: white;
+}
+
+.landing-image {
+  margin-top: 1.8em;
+  max-height: 300px;
+  border-radius: 7% 2%;
+  margin-bottom: 1em;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.landing-left-image {
+  margin-right: 1.6em;
+}
+
 .nav-title {text-align: center;}
 
 .container {
