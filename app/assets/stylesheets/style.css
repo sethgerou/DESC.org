@@ -21,7 +21,7 @@ html, body {
   background-color: white;
 }
 
-.donate a, .donate a:hover, .donate a:focus, .donate a:visited {
+#donate a, #donate a:hover, #donate a:focus, #donate a:visited {
   color: #41887A;
 }
 
