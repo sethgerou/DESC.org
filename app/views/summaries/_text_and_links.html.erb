@@ -1,31 +1,22 @@
-<% if user_signed_in? %>
-  <%= link_to "✎", edit_summary_path(summary.id), class: "summary", method: "get" %>
-  <%= link_to "x", summary_path(summary.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
-<% end %>
-<div class="topic-heading">
-  <h1><a href="#"><%= summary.heading.capitalize %></a></h1>
-  <h3 class="subheading"><%= summary.subheading.capitalize %></h3>
-</div>
-
-<div class="learn-more">
-  <a href="#">
-    <div class="learn-more-heading white">
-      <h4>Learn More</h4>
-    </div></a>
-    <% if user_signed_in? %>
-      <%= link_to "New", new_summary_link_path(summary.id), class: "summary", method: "get" %>
-    <% end %>
-
-  <% summary.links.each do |link| %>
-  <p>
+<div class="medium-7 columns">
   <% if user_signed_in? %>
-    <%= link_to "✎", edit_summary_link_path(summary.id, link.id), class: "summary", method: "get" %>
-    <%= link_to "x", summary_link_path(summary.id, link.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
+    <%= link_to "✎", edit_summary_path(summary.id), class: "summary", method: "get" %>
+    <%= link_to "x", summary_path(summary.id), method: "delete", class: "summary" ,data: {confirm: "Are you sure? (this action can not be undone)"} %>
   <% end %>
-    <a href="<%= link.url %>"><%= link.text %></a></p>
-  <% end %>
-</div>
+  <div class="topic-heading">
+    <h1><a href="#"><%= summary.heading.capitalize %></a></h1>
+    <h3 class="subheading"><%= summary.subheading.capitalize %></h3>
+  </div>
 
-<div class="topic-summary medium-7 large-9 columns">
-  <h5><%= summary.body %></h5>
+  <div class="desktop-links">
+    <%= render partial: "learn_more_links", locals: {summary: summary} %>
+  </div>
+
+  <div class="topic-summary medium-7 large-9 columns">
+    <h5><%= summary.body %></h5>
+  </div>
+
+  <div class="mobile-links">
+    <%= render partial: "learn_more_links", locals: {summary: summary} %>
+  </div>
 </div>

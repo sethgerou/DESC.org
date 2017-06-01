@@ -17,25 +17,26 @@
   <div class="summary">
   <% if i%2 == 0 %> <!-- left aling even indexes -->
     <div class="row">
-      <div class="medium-7 columns">
         <%= render partial: 'text_and_links', locals: {summary: summary} %>
-      </div>
+
         <%= render partial: 'image', locals: {summary: summary} %>
     </div>
    <% else %> <!-- right align odd indexes -->
     <div class="row">
-      <div class=" right-align">
-        <%= render partial: 'image', locals: {summary: summary} %>
+      <div class="right-align">
+        <div class="desktop-image">
+          <%= render partial: 'image', locals: {summary: summary} %>
+        </div>
       </div>
-      <div class="medium-7 columns">
         <%= render partial: 'text_and_links', locals: {summary: summary} %>
-      </div>
-    </div>
-  <% end %>
+        <div class="mobile-image">
+          <%= render partial: 'image', locals: {summary: summary} %>
+        </div>
+    <% end %>
+</div>
 
   <div class="mobile-spacing"></div>
 
-</div>
-
-<% end %>
+  <% end %>
+  </div>
 </div>
