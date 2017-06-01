@@ -7,5 +7,7 @@ Rails.application.routes.draw do
     resources :links, except: [:index, :show]
   end
 
+  resources :sidebars, only: [:edit]
+
   resources :pages, only: [:show, :edit, :update]
 end

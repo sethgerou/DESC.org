@@ -64,3 +64,27 @@
     opacity: .2;
   }
 }
+
+@media screen and (min-width: 420px) {
+  .mobile-links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .desktop-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .mobile-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .desktop-image {
+    display: none;
+  }
+}
