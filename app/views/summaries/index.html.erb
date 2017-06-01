@@ -24,12 +24,12 @@
    <% else %> <!-- right align odd indexes -->
     <div class="row">
       <div class="right-align">
-        <div class="mobile-image">
+        <div class="desktop-image">
           <%= render partial: 'image', locals: {summary: summary} %>
         </div>
       </div>
         <%= render partial: 'text_and_links', locals: {summary: summary} %>
-        <div class="desktop-image">
+        <div class="mobile-image">
           <%= render partial: 'image', locals: {summary: summary} %>
         </div>
     <% end %>

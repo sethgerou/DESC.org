@@ -88,3 +88,10 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .learn-more {
+    display: block;
+    width: 100%;
+  }
+}
