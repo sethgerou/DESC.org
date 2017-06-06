@@ -4,17 +4,17 @@
     <title>Desc</title>
     <meta name="viewport" content="width=device-width" />
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <link rel="stylesheet" href="/assets/foundation.css" />
     <!-- Compressed JavaScript -->
     <script src="/assets/vendor/foundation.js"></script>
   </head>
-  <body data-no-turbolink>
+  <body>
     <div class="page-wrap">
-<a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
-<a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a>
+<!-- <a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
+<a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a> -->
   <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
   <button class="menu-icon" type="button" data-toggle="example-menu"></button>
 
