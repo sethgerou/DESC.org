@@ -202,3 +202,7 @@ color: white;
 .submenu {display: none;}
 .menu-icon {display: none;}
 .title-bar {display: none;}
+
+.is-dropdown-submenu-parent::after {
+  display: inline-block;
+}
