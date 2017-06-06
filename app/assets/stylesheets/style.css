@@ -66,14 +66,14 @@ html, body {
 }
 
 .cornerlogo {
-  margin-top: .6%;
-  margin-left: .6%;
+  /*margin-top: .6%;
+  margin-left: .6%;*/
   float: left;
 }
 
 .cornerlogo-mobile {
-  margin-top: 2%;
-  margin-left: 1%;
+  /*margin-top: 2%;
+  margin-left: 1%;*/
   float: left;
 }
 
@@ -200,5 +200,4 @@ color: white;
 }
 
 .submenu {display: none;}
-
 .title-bar {display: none;}

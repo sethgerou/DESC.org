@@ -11,21 +11,20 @@
 
   </head>
   <body>
-    <div >
-  <div >
-    <a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
-    <a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a>
-  </div>
-</div>
+
+    <!-- <a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
+    <a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a> -->
+
     <div class="page-wrap">
 
   <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <%= link_to( image_tag("key3desc", class: "cornerlogo-mobile"), root_path) %>
   <button class="menu-icon" type="button" data-toggle="example-menu"></button>
-
-
 </div>
 
 <div class="top-bar" id="example-menu">
+      <%= link_to( image_tag("keylogo", class: "cornerlogo"), root_path) %>
+
   <div class="top-bar-left">
     <ul  class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
 
