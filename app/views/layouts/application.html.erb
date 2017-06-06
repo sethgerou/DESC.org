@@ -6,8 +6,9 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" href="/assets/foundation.css" />
-    <script src="/assets/vendor/foundation.min.js"></script>
+    <%= stylesheet_link_tag 'foundation.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'foundation.min.js', 'data-turbolinks-track': 'reload' %>
 
   </head>
   <body>
