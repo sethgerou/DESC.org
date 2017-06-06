@@ -9,7 +9,3 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
-Rails.application.config.assets.precompile += %w( foundation.min.js )
-Rails.application.config.assets.precompile += %w( foundation.css )
-Rails.application.config.assets.precompile += %w( keylogo.png )
-Rails.application.config.assets.precompile += %w( key3desc.png )
