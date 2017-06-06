@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-
+//= require tinymce
 //= require jquery
 //= require jquery_ujs
 
@@ -21,15 +21,15 @@ window.onload = function() {
        $(document).foundation();
 };
 
-// tinymce.init({
-//   selector: "textarea",  // change this value according to your html
-//   plugins: "textcolor link media image code table preview hr searchreplace wordcount visualblocks visualchars imagetools help insertdatetime directionality lists",
-//   toolbar: "undo redo | styleselect | bold italic | bullist numlist | forecolor backcolor media image link sizeselect fontselect code",
-//   textcolor_map: [
-//    "000000", "Black",
-//    "FFFFFF", "White",
-//    "41887A", "DESC green"
-//  ],
-//   image_advtab: true,
-//   height : "480"
-// });
+tinymce.init({
+  selector: "textarea",  // change this value according to your html
+  plugins: "textcolor link media image code table preview hr searchreplace wordcount visualblocks visualchars imagetools help insertdatetime directionality lists",
+  toolbar: "undo redo | styleselect | bold italic | bullist numlist | forecolor backcolor media image link sizeselect fontselect code",
+  textcolor_map: [
+   "000000", "Black",
+   "FFFFFF", "White",
+   "41887A", "DESC green"
+ ],
+  image_advtab: true,
+  height : "480"
+});
