@@ -6,29 +6,33 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'foundation.css', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <link rel="stylesheet" href="/assets/foundation.css" />
-    <!-- Compressed JavaScript -->
-    <script src="/assets/vendor/foundation.js"></script>
+    <%= javascript_include_tag 'foundation.min.js', 'data-turbolinks-track': 'reload' %>
+
   </head>
   <body>
-    <div class="page-wrap">
-<a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
-<a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a>
-  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
 
-  <div class="title-bar-title"></div>
+    <!-- <a href="/"><img class="cornerlogo" src="/assets/keylogo.png" alt=""></a>
+    <a href="/"><img class="cornerlogo-mobile" src="/assets/key3desc.png" alt=""></a> -->
+
+    <div class="page-wrap">
+
+  <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+          <%= link_to( image_tag("key3desc", class: "cornerlogo-mobile"), root_path) %>
+  <button class="menu-icon" type="button" data-toggle="example-menu"></button>
 </div>
 
 <div class="top-bar" id="example-menu">
+      <%= link_to( image_tag("keylogo", class: "cornerlogo"), root_path) %>
+
   <div class="top-bar-left">
     <ul  class="dropdown vertical medium-horizontal menu" data-dropdown-menu>
 
       <!-- <li class="menu-text">SITE TITLE</li> -->
       <li>
         <a href="/pages/2">What We Do</a>
-        <ul class="menu vertical">
+        <ul class="menu submenu vertical">
           <li><a href="/pages/10">Emergency Shelter</a></li>
           <li><a href="/pages/11">Health Services</a></li>
           <li><a href="/pages/12">Permanent Supportive Housing</a></li>
