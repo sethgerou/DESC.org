@@ -1,0 +1,50 @@
+Hi I'm Austin
+And I'm Seth
+
+Our final project was a little different than most.
+Thanks to Jordan, we were introduced to a real client that had a real website that needed a real redesign.
+
+As we were a team of two, we paired on the vast majority of the project - save for a few research spikes and debugging adventures.
+
+(show existing non-responsive site)
+
+Our client is DESC.org - an organization that helps the homeless and formerly homeless in the Seattle community.  We weren't given a whole lot to go on - only that their current website was built in Dreamweaver and was not at all responsive.
+
+The site is also rarely updated as it's edited using WordPress, which no one on the DESC team knows very well.
+
+So we set about re-doing the DESC site to make it more responsive, and to make it easier to update/maintain.
+
+(show justinmind prototypes)
+
+Step one was wireframing a new design.
+We used a site prototyping tool called Justinmind that allowed us to build two client ready mock ups - one of the mobile view, the other of the tablet/desktop view.  Justinmind was a nice tool to work in as we could drag and drop a lot of the basic web design elements and it even provided a tool to preview the site live on a mobile phone.  We sent a desktop and mobile preview to the client for review.
+
+The client responded they liked it and they were excited, and could you re-arrange all the content per the attached spreadsheet.  ...mostly good news - they liked the design, and had some content tweaks they wanted to make - certainly doable.
+
+(show early site version here (if possible))
+
+So, the next step was to build a static version of the new design using a responsive grid.  We opted for Foundation CSS over Bootstrap as Bootstrap can look kind of Bootstrappy.  We fired up a new Rails project and hard-coded an index page and the about us page using the Foundation CSS grid and responsive menus/navigation.  Once that was built, we deployed to Heroku and again sent a link off to the client for review.
+
+The response was mixed.  While they were excited about the progress, they started to have some design opinions.  They now wanted a landing page that highlighted content from the entire site, contradicting instructions we had received earlier.  They also wanted the logo in the nav. bar instead of above it, and they wanted a different color green.  The client provided a couple links to sites they liked - one with an example of the logo in the nav bar, and the other with a landing page they liked - the bill and melinda gates foundation site.
+
+Crap - they changed everything.  We were going to come up with a new landing page design, and re-work the nav bar to integrate the logo.
+
+About an hour later - thank god they changed everything.  What we had only just realized was the current site was limiting both the clients and our ability to think outside the box and come up with new ideas for how the look and feel of the site could change.   Now we were free to make some pretty dramatic changes and attempt to rip off the bill and melinda gates site in the process - not a bad starting place.  And the changes proved easier to execute that we had thought - soon we had a much more interesting landing page design.
+
+You'll remember, at some point in this process, our other main goal was to make the site easier to edit (to make the site maintainable without WordPress).  It would be easy enough to have a page model, with a heading, maybe a sub-heading, and a body, but what if the client wanted to add some images, some links, and more than one heading?  Sure we could have lots of models, and re-invent WordPress, but we wanted to make something simpler and easier to use.  So we landed on a rich text editor - a logged-in administrator would be able to edit a page in a simple editor, styling the text, adding images and links as they saw fit.  TinyMCE fit the bill nicely and was relatively easy to implement.
+
+Admin page editing meant we needed a secure login - which Anil and Jordan suggested should be more robust than BCrypt - so we used an authorization tool called Devise - it was relatively easy to set up, but a little hard to understand.  Setting up only a user model, all of the views, controllers, and helper methods are automatically created by Devise - it's just magic that was at first was pretty difficult to comprehend was working.
+
+So, we got the site re-designed, and we got rich-text editing, and it was time to present in-person to the client.  They came here to DBC and we did a brief walk-through.  They seemed to really like the site, which was a great feeling!  They did have a few feature requests.  Could they see the HTML in the rich text editor?  And could they edit the landing page themselves?
+
+(show current site design)
+
+Viewing the HTML in the rich text editor turned out to be easy - we had that working within about 20 minutes.  But enabling edits to the landing page?  We had hard coded the landing page as it was a pretty complicated layout.  So we decided the landing page was an index page, for a number of what we called summaries.  Each summary had a heading, a subheading, an image, and some number of associated links.  Easy enough.
+
+(show landing page edit functionality)
+
+So, that's where were at right now - the landing page is editable (though the edit process itself still needs a little styling), and so are all the other pages.  And the site is mobile friendly.
+
+Going forward, there are a few things still on the roadmap.  We intend to add an ability to upload images directly from the site to a cloud server.  The client also asked that we put images in this grey box here - maybe 5 images across for a desktop device, 3 for a tablet, and just one image for a mobile device.  Once those features are implemented, we think we'll be getting pretty close to ready to deploy.
+
+The DESC.org site is becoming an open source project - In the readme, we'll clearly define the project roadmap, any outstanding issues, and what contributions would be of highest value.  At some point it will probably make sense to transfer ownership of the project over to DBC to make it easier for students to contribute as part of their DBC experience.
